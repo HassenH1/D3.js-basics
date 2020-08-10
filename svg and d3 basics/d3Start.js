@@ -10,10 +10,12 @@
 // console.log(a, b);
 
 const canvas = d3.select(".canvas"); //selected canvas
-const svg = canvas.append("svg").attr("height", 600).attr("width", 600); // now append svg element to canvas and attaching attributes to it
-
-// svg.attr("height", 600);
-// svg.attr("width", 600);
+const svg = canvas
+  .append("svg")
+  .attr("height", 600)
+  .attr("width", 600)
+  .attr("style", "outline: thin solid red;");
+// now append svg element to canvas and attaching attributes to it
 
 // now appending shapes to svg container
 svg
@@ -38,3 +40,12 @@ svg
   .attr("y1", 20)
   .attr("y2", 120)
   .attr("stroke", "red");
+
+//text svg element
+svg
+  .append("text")
+  .attr("x", 20)
+  .attr("y", 200)
+  .attr("fill", grey)
+  .text("Hello world")
+  .style("font-family", "arial");
