@@ -1,0 +1,22 @@
+SVG paths
+
+VV tells svg how to draw basically VV
+<path d="M150 0 L75 200 L225 200 Z" />
+
+M = move to //pick a place to start, not drawing yet
+M150 is x coordinate 0 is y coordinate
+
+L = line to //draw a line to a certain point
+L75 draw line from M to x(75) y(200)
+then we create another line
+L225 draw line from position we currently were in (75 - 200) to x(225) y(200)
+
+Z = close the path
+
+more letters!!
+
+H - horizontal line to
+V - vertical line to
+C - curve to
+S - smooth curve to 
+...and more
