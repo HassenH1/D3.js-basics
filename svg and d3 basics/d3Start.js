@@ -17,23 +17,26 @@ const svg = canvas
   .attr("style", "outline: thin solid red;");
 // now append svg element to canvas and attaching attributes to it
 
+const group = svg.append("g").attr("transform", "translate(50, 100)"); //put all three items in a group
+
 // now appending shapes to svg container
-svg
+//svg old element
+group
   .append("rect")
   .attr("width", 200)
   .attr("height", 100)
   .attr("fill", "blue")
   .attr("x", 20)
   .attr("y", 20);
-
-svg
+//svg old element
+group
   .append("circle")
   .attr("r", 50)
   .attr("cx", 300)
   .attr("cy", 70)
   .attr("fill", "pink");
-
-svg
+//svg old element
+group
   .append("line")
   .attr("x1", 370)
   .attr("x2", 400)
@@ -46,6 +49,6 @@ svg
   .append("text")
   .attr("x", 20)
   .attr("y", 200)
-  .attr("fill", grey)
+  .attr("fill", "grey")
   .text("Hello world")
   .style("font-family", "arial");
